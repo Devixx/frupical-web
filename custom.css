@@ -1,0 +1,152 @@
+/*
+ * Custom styles to enhance mobile responsiveness and premium aesthetic
+ * while keeping the existing color scheme.  This stylesheet is loaded
+ * after the main stylesheet and overrides specific rules to provide a
+ * more luxurious look and feel on both desktop and mobile devices.
+ */
+
+/* Improve text rendering for smoother typography */
+body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/*
+ * Hero Section
+ * Add a sophisticated gradient overlay on top of the existing
+ * fruit illustration to create depth and a premium feel.  The
+ * colors are pulled from the existing palette, so the brand
+ * identity remains consistent.  Text color is lightened for
+ * readability.
+ */
+.lux-hero,
+#hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(var(--color-teal-500-rgb), 0.88),
+      rgba(var(--color-teal-500-rgb), 0.88)
+    ),
+    url("fruits.png") center/cover no-repeat;
+  color: var(--color-cream-50);
+}
+
+/* Add subtle shadow to hero texts for improved contrast */
+.lux-hero .hero__greeting,
+.lux-hero .hero__headline,
+.lux-hero .hero__tagline,
+.lux-hero .hero__messages p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Constrain paragraph widths and adjust typography for better
+ * readability across sections.  By centering and limiting the
+ * width of long text blocks, the layout feels more refined and
+ * high‑end.  These rules target multiple sections to ensure a
+ * consistent look.
+ */
+.lux-hero .hero__messages p,
+.services__grid p,
+.promo-card p,
+.contact__info p {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  /* Hide the navigation entirely on small screens to create a
+   * cleaner mobile layout. */
+  .header__nav {
+    display: none;
+  }
+
+  /* Increase horizontal padding on mobile so that sections
+   * have comfortable breathing room. */
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Reduce hero padding so content fits comfortably on small
+   * screens without overwhelming the viewport. */
+  .hero {
+    padding: 4rem 0 2rem;
+  }
+
+  /* Scale down illustration size on mobile for better balance. */
+  .hero__illustration {
+    width: 200px;
+  }
+
+  /* Ensure grid layouts collapse into a single column on small
+   * screens for readability and ease of navigation. */
+  .services__grid,
+  .promotions__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack contact information and form vertically on mobile */
+  .contact__inner {
+    flex-direction: column;
+  }
+}
+
+/*
+ * Hero message cards
+ * Create individual card-like elements for each language in the hero
+ * section.  These cards use a semi-transparent background and border
+ * pulled from the brown colour palette to maintain the brand’s
+ * luxurious feel.  The language label is highlighted using the
+ * primary colour, and the description is italicised for elegance.
+ */
+.hero__messages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-message {
+  /* Use a darker semi-transparent background with a slight blur to
+   * improve text contrast against the hero's gradient backdrop. */
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  max-width: 280px;
+  text-align: left;
+  color: var(--color-cream-50);
+}
+
+.hero-language {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  /* Use the primary colour for language labels but slightly
+   * desaturate it on dark backgrounds */
+  color: var(--frupical-gold);
+  margin-bottom: 0.5rem;
+}
+
+.hero-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-cream-50);
+  /* Subtle shadow improves readability on dark glassy cards */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  /* On mobile, make each hero message take full width and center text */
+  .hero-message {
+    flex: 1 1 100%;
+    max-width: none;
+    text-align: center;
+  }
+}

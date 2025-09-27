@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frupical | Luxury Fruit Delivery in Luxembourg</title>
+    <!-- Canonical URL helps prevent duplicate content issues -->
+    <link rel="canonical" href="https://frupical.com/" />
     <!-- SEO Meta Tags -->
     <meta
       name="description"
@@ -52,13 +54,30 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Custom overrides for mobile responsiveness and premium styling -->
+    <link rel="stylesheet" href="custom.css" />
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Frupical",
+        "url": "https://frupical.com",
+        "logo": "logo.png",
+        "description": "Frupical delivers premium, high-quality fruits straight to your door in Luxembourg.",
+        "sameAs": [
+          "https://www.facebook.com/frupical",
+          "https://www.instagram.com/frupical"
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Header Navigation -->
     <header class="header">
       <div class="container header__inner">
         <a href="#hero" class="header__logo">
-          <img src="logo.png" alt="Frupical logo" />
+          <img src="logo.png" alt="Frupical premium fruit delivery logo" />
           <h3>Frupical</h3>
         </a>
         <nav class="header__nav" aria-label="Main Navigation">
@@ -78,31 +97,39 @@
       <section id="hero" class="lux-hero fade-section in-view">
         <div class="container hero__content">
           <div class="hero__logo-wrapper">
-            <img src="logo.png" alt="Frupical emblem" />
+            <img src="logo.png" alt="Frupical premium fruit delivery logo" />
           </div>
           <!-- Greeting from the flyer -->
           <p class="hero__greeting">GUDDE MOIEN</p>
           <h1 class="hero__headline">FRUPICAL</h1>
           <p class="hero__tagline">Discover Fresh High Quality Fruits</p>
           <div class="hero__messages">
-            <p>
-              <strong>Gudde Moien:</strong> Mir liwweren Iech all Woch déi
-              bescht Friichten aus der ganzer Welt direkt bei Iech heem.
-            </p>
-            <p>
-              <strong>Français:</strong> Nous vous livrons chaque semaine les
-              plus beaux fruits du monde entier directement chez vous.
-            </p>
-            <p>
-              <strong>English:</strong> We deliver weekly the finest fruits from
-              around the world directly to your home.
-            </p>
+            <!-- Luxurious multi‑language greetings: each language gets its own
+                 card with a highlighted label and italic description to
+                 reinforce the premium feel. -->
+            <div class="hero-message">
+              <span class="hero-language">Gudde Moien</span>
+              <p class="hero-description">
+                Mir liwweren Iech all Woch déi bescht Friichten aus der ganzer
+                Welt direkt bei Iech heem.
+              </p>
+            </div>
+            <div class="hero-message">
+              <span class="hero-language">Français</span>
+              <p class="hero-description">
+                Nous vous livrons chaque semaine les plus beaux fruits du monde
+                entier directement chez vous.
+              </p>
+            </div>
+            <div class="hero-message">
+              <span class="hero-language">English</span>
+              <p class="hero-description">
+                We deliver weekly the finest fruits from around the world
+                directly to your home.
+              </p>
+            </div>
           </div>
-          <img
-            src="fruits.png"
-            alt="Assorted fruits illustration"
-            class="hero__illustration"
-          />
+          <div class="hero__illustration" />
           <a href="#contact" class="hero__cta">Get Started</a>
         </div>
       </section>
@@ -209,22 +236,26 @@
       <div class="container footer__inner">
         <div class="footer__contact">
           <p>
-            <span class="footer__contact-item">📞</span>
+            <span class="footer__contact-item"><img src="phone.png" /></span>
             <a href="tel:+352661166663">+352 661 166 663</a>
           </p>
           <p>
-            <span class="footer__contact-item">🌐</span>
+            <span class="footer__contact-item"><img src="web.png" /></span>
             <a href="https://frupical.com" target="_blank" rel="noopener"
               >frupical.com</a
             >
           </p>
           <p>
-            <span class="footer__contact-item">✉️</span>
+            <span class="footer__contact-item"><img src="email.png" /></span>
             <a href="mailto:contact@frupical.com">contact@frupical.com</a>
           </p>
         </div>
         <div class="footer__logo-wrapper">
-          <img src="logo.png" alt="Frupical emblem" class="footer__logo" />
+          <img
+            src="logo.png"
+            alt="Frupical premium fruit delivery logo"
+            class="footer__logo"
+          />
         </div>
       </div>
       <div class="footer__bottom">

@@ -1238,7 +1238,14 @@ body {
   color: var(--frupical-light-gold);
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-standard);
-  filter: grayscale(1);
+}
+
+.footer__contact-item img{
+    width: 16px;
+    height: 16px;
+    margin-right: var(--space-8);
+    vertical-align: middle;
+    filter: none;
 }
 
 .footer__contact-item a {
@@ -1260,7 +1267,8 @@ body {
 .footer__bottom p {
   margin: 0;
   font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--frupical-green);
+  font-weight: 600;
 }
 
 /* Responsive Design */
@@ -1385,6 +1393,8 @@ body {
   background-color: var(--cream);
   backdrop-filter: blur(10px);
   padding: 1rem 0;
+      max-height: 120px;
+
 }
 .header__inner {
   display: flex;
