@@ -1452,7 +1452,7 @@ body {
   position: absolute;
   width: 180%;
   height: 180%;
-  background: url("footer.png") no-repeat center;
+  background: url("../images/footer.png") no-repeat center;
   background-size: cover;
   opacity: 0.1;
   pointer-events: none;
@@ -1731,7 +1731,7 @@ body {
   left: -25%;
   right: -25%;
   bottom: -50%;
-  background: url("footer.png") no-repeat center;
+  background: url("../images/footer.png") no-repeat center;
   background-size: cover;
   opacity: 0.15;
   z-index: 0;
@@ -2112,7 +2112,7 @@ body {
   right: -20%;
   top: 0;
   bottom: -40%;
-  background: url("footer.png") no-repeat center / cover;
+  background: url("../images/footer.png") no-repeat center / cover;
   /* Increase opacity so the decorative footer image subtly stands out against the golden background */
   opacity: 0.3;
   z-index: 0;
@@ -2217,7 +2217,7 @@ body {
   left: -20%;
   right: -20%;
   height: 130%;
-  background: url("footer.png") no-repeat center top / cover;
+  background: url("../images/footer.png") no-repeat center top / cover;
   opacity: 0.08;
   z-index: 0;
   pointer-events: none;
@@ -2332,7 +2332,7 @@ body {
     position: absolute;
     width: 160%;
     height: 160%;
-    background: url(footer.png) no-repeat center;
+    background: url(../images/footer.png) no-repeat center;
     background-size: cover;
     opacity: 0.06;
     pointer-events: none;
@@ -2481,7 +2481,7 @@ body {
   position: absolute;
   width: 160%;
   height: 160%;
-  background: url("footer.png") no-repeat center;
+  background: url("../images/footer.png") no-repeat center;
   background-size: cover;
   opacity: 0.07;
   pointer-events: none;
@@ -2544,7 +2544,7 @@ body {
   position: absolute;
   width: 160%;
   height: 160%;
-  background: url("footer.png") no-repeat center;
+  background: url("../images/footer.png") no-repeat center;
   background-size: cover;
   opacity: 0.06;
   pointer-events: none;
@@ -2556,7 +2556,7 @@ body {
   position: absolute;
   width: 160%;
   height: 160%;
-  background: url("footer.png") no-repeat center;
+  background: url("../images/footer.png") no-repeat center;
   background-size: cover;
   opacity: 0.06;
   pointer-events: none;
@@ -2719,7 +2719,7 @@ body {
     position: absolute;
     width: 160%;
     height: 160%;
-    background: url(footer.png) no-repeat center;
+    background: url(../images/footer.png) no-repeat center;
     background-size: cover;
     opacity: 0.06;
     pointer-events: none;
@@ -2744,7 +2744,7 @@ body {
     position: absolute;
     width: 160%;
     height: 160%;
-    background: url(footer.png) no-repeat center;
+    background: url(../images/footer.png) no-repeat center;
     background-size: cover;
     opacity: 0.06;
     pointer-events: none;
